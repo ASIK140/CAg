@@ -231,10 +231,15 @@ html {
   align-items: center;
   gap: 5vmax;
   justify-content: center;
+  background: hsla(139, 70%, 75%, 1);
+
+background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+
 }
 #page-2 h1 {
   font-size: 5vmax;
   font-weight: 500;
+  line-height: 1;
 }
 .boxs {
   display: flex;
@@ -322,7 +327,8 @@ html {
   width: 100%;
   position: absolute;
   z-index: -99;
-
+  top: 0;
+  filter: blur(2px);
 }
 .bg-img img {
   height: 100%;
@@ -338,6 +344,7 @@ html {
   align-items: center;
   gap: 5vmax;
   padding: 2vmax 0;
+  position: relative;
 }
 .head h1 {
   background-color: aquamarine;
@@ -356,11 +363,21 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: lightblue;
+  background: hsla(152, 100%, 50%, 1);
+  background: linear-gradient(
+    180deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 55%
+  );
   border-radius: 15px;
   height: 30vmax;
   width: 25vmax;
   gap: 1vmax;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.p-box:hover{
+  transform: translateY(-25px);
 }
 .p-box img {
   height: 20vmax;
@@ -371,11 +388,16 @@ html {
   font-weight: 500;
 }
 #page-5 {
-  min-height: 100vh;
+  height: 200vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10vmax;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 5vmax 0;
 }
 .s-page section {
   display: flex;
@@ -384,7 +406,7 @@ html {
   align-items: center;
   justify-content: center;
 }
-.s-page img {
+.s-img {
   height: 80vh;
   width: 30vmax;
   object-fit: cover;
@@ -416,19 +438,84 @@ html {
   cursor: pointer;
   transition: all 0.4s;
 }
-.text button:hover{
-    transform: scale(0.9);
+.text button:hover {
+  transform: scale(0.9);
 }
-.text span{
-    font-size: 1.5vmax;
-    font-weight: 700;
+.text span {
+  font-size: 1.5vmax;
+  font-weight: 700;
 }
 
-#page-6{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5vmax 0;
+#page-6 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vmax 0;
+  position: relative;
+  color: #fff;
+}
+
+#page-7 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 5vmax 0;
+  display: flex;
+  align-items: center;
+  gap: 5vmax;
+  flex-direction: column;
+ 
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  background-color: #fcdc2a;
+  align-items: center;
+  /* padding: 0 10vmax; */
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+}
+footer nav ul li {
+  list-style: none;
+  transition: all 0.5s;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1vmax;
+  font-weight: 600;
+}
+footer nav ul li:hover {
+  transform: translateX(10px);
+}
+footer .logo h1 {
+  text-align: center;
+  color: #000;
+  font-size: 3vmax;
+}
+.icons {
+  display: flex;
+  font-size: 1.6vmax;
+  gap: 2vmax;
+  color: #000;
+}
+.icons a {
+  color: #000;
+  transition: all 0.5s;
+}
+.icons a:hover {
+  color: #e23634;
+}
+footer .con {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  color: #000;
 }
