@@ -80,6 +80,7 @@ html {
   list-style: none;
   font-size: 1.2vmax;
   font-weight: 500;
+  position: relative;
 }
 .nav {
   text-decoration: none;
@@ -224,17 +225,19 @@ html {
 }
 
 #page-2 {
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5vmax;
   justify-content: center;
-  background: hsla(139, 70%, 75%, 1);
-
-background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
-
+  background: hsla(33, 100%, 53%, 1);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 189, 108) 0%,
+    rgb(245, 237, 81) 100%
+  );
 }
 #page-2 h1 {
   font-size: 5vmax;
@@ -266,10 +269,11 @@ background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
+  cursor: pointer;
 }
 .box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0px 25px 8px hsla(152, 100%, 50%, 0.7);
+  box-shadow: 10px 10px 25px hsla(293, 100%, 50%, 0.7);
 }
 .box img {
   height: 8vmax;
@@ -293,6 +297,11 @@ background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%
   flex-direction: column;
   gap: 1.5vmax;
   color: #fff;
+  background: url(https://images.unsplash.com/photo-1474674556023-efef886fa147?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #page-3 h1 {
   font-size: 5vmax;
@@ -363,21 +372,18 @@ background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: hsla(152, 100%, 50%, 1);
-  background: linear-gradient(
-    180deg,
-    hsla(152, 100%, 50%, 1) 0%,
-    hsla(186, 100%, 69%, 1) 55%
-  );
+  background-color: #fff;
+  border: 5px solid yellow;
   border-radius: 15px;
   height: 30vmax;
   width: 25vmax;
   gap: 1vmax;
-  transition: all 0.4s;
+  transition: transform 0.4s;
   cursor: pointer;
 }
-.p-box:hover{
+.p-box:hover {
   transform: translateY(-25px);
+  box-shadow: 10px 10px 25px rgba(123, 0, 255, 0.4);
 }
 .p-box img {
   height: 20vmax;
@@ -431,7 +437,12 @@ background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%
   width: 10vmax;
   height: 2.5vmax;
   border: none;
-  background-color: #fcdc2a;
+  background: hsla(33, 100%, 53%, 1);
+  background: linear-gradient(
+    180deg,
+    hsla(33, 100%, 53%, 1) 0%,
+    hsla(58, 100%, 68%, 1) 100%
+  );
   border-radius: 5px;
   font-size: 1.2vmax;
   font-weight: 500;
@@ -447,33 +458,44 @@ background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(139, 70%, 75%
 }
 
 #page-6 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 5vmax 0;
   position: relative;
+  background: url(../resources/bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
+  background-attachment: fixed;
+  gap: 2vmax;
 }
 
 #page-7 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
-  padding: 5vmax 0;
+  padding: 8vmax 0;
   display: flex;
   align-items: center;
   gap: 5vmax;
   flex-direction: column;
- 
 }
 
 footer {
   display: flex;
   justify-content: space-evenly;
   height: 40vh;
-  background-color: #fcdc2a;
+  background: hsla(33, 100%, 53%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(33, 100%, 53%, 1) 0%,
+    hsla(58, 100%, 68%, 1) 100%
+  );
   align-items: center;
   /* padding: 0 10vmax; */
 }
@@ -518,4 +540,29 @@ footer .con {
   flex-direction: column;
   gap: 1vmax;
   color: #000;
+}
+
+.d-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  background-color: #e23634;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+  width: 10vmax;
+  gap: 1vmax;
+  /* height: 4vmax; */
+
+}
+#page-1 nav ul li:hover .d-down{
+  height: 4vmax;
+  padding: 1vmax 0;
+}
+.d-down a{
+  line-height: 1;
+  font-size: 0.8vmax;
+  font-weight: 400;
+  text-align: center;
 }
