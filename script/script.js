@@ -1,3 +1,9 @@
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
+
 let s_imgs=document.querySelector(".s-imgs")
 let chld=s_imgs.children
 let b_img=document.getElementById("img")
