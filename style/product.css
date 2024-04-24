@@ -63,3 +63,12 @@ footer {
   align-items: center;
   /* padding: 0 10vmax; */
 }
+@media (width<600px) {
+  #page-1{
+    flex-direction: column;
+    text-align: center;
+  }
+  .dtls{
+    align-items: center;
+  }
+}

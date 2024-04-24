@@ -54,3 +54,14 @@ footer nav ul {
     color: #000;
   }
   
+
+  @media (width<600px) {
+    footer{
+      flex-direction: column;
+    }
+    footer section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

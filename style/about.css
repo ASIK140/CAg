@@ -111,3 +111,13 @@ footer .con {
   gap: 1vmax;
   color: #000;
 }
+
+@media (width<600px) {
+  .con{
+    flex-direction: column;
+    padding: 2vmax;
+  }
+  .right img{
+    height: 40vh;
+  }
+}

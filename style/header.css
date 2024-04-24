@@ -77,3 +77,53 @@
     height: 100%;
     cursor: pointer;
   }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 3vmax;
+    padding: 5px;
+    z-index: 99999;
+    color: #fff;
+  }
+  .act {
+    transform: translateX(100%);
+    display: none;
+  }
+  .menu {
+    position: absolute;
+    background-color: #03091d;
+    width: 100%;
+    padding: 3vmax 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .m-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vmax;
+  }
+  .m-nav ul li {
+    list-style: none;
+  }
+  .m-nav ul li a {
+    color: #fff;
+    font-size: 3vmax;
+    text-decoration: none;
+  }
+  
+  @media (width<600px) {
+    .header nav{
+      display: none;
+    }
+    .menu-icon {
+      display: flex;
+    }
+    .act {
+      display: flex;
+    }
+  }

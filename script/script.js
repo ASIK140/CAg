@@ -14,3 +14,11 @@ for (let index = 0; index < chld.length; index++) {
     })
     
 }
+
+let menu_icon = document.querySelector(".menu-icon")
+let menu=document.querySelector(".menu")
+
+menu_icon.addEventListener("click",()=>{
+    console.log("work");
+  menu.classList.toggle("act")
+})

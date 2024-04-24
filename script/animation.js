@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     y: 200,
     scrollTrigger: {
       trigger: "#page-2",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#page-8",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "bottom center",
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#page-3",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -41,7 +38,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-1",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -53,7 +49,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-2",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -65,7 +60,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-1",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -77,7 +71,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-2",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -86,11 +79,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
   gsap.from(".s-img3", {
     opacity: 0,
-    x: -200,
+    y: -200,
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-3",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -98,11 +90,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   gsap.from(".s-img4", {
     opacity: 0,
-    x: 200,
+    scale:2,
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-4",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -110,11 +101,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   gsap.from(".text3", {
     opacity: 0,
-    x: 200,
+    y: 200,
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-3",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -122,11 +112,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   gsap.from(".text4", {
     opacity: 0,
-    x: -200,
+    scale:2,
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#sec-4",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -135,10 +124,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   gsap.from(".p-boxR", {
     opacity: 0,
-    x: 200,
     scrollTrigger: {
       trigger: "#page-4",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
@@ -146,13 +133,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   gsap.from(".p-boxL", {
     opacity: 0,
-    x: -200,
     scrollTrigger: {
       trigger: "#page-4",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "50% center",
     },
   });
 });
+
+
+let menu_icon = document.querySelector(".menu-icon")
+let menu=document.querySelector(".menu")
+
+menu_icon.addEventListener("click",()=>{
+    console.log("work");
+  menu.classList.toggle("act")
+})
