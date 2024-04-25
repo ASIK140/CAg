@@ -191,7 +191,7 @@ html {
   font-weight: 600;
   color: #fcdc2a;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 #hero span {
   font-weight: 300;
