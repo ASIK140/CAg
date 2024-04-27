@@ -51,19 +51,7 @@ html {
   font-size: 1.2vmax;
 }
 
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  height: 40vh;
-  background: hsla(33, 100%, 53%, 1);
-  background: linear-gradient(
-    90deg,
-    hsla(33, 100%, 53%, 1) 0%,
-    hsla(58, 100%, 68%, 1) 100%
-  );
-  align-items: center;
-  /* padding: 0 10vmax; */
-}
+
 @media (width<600px) {
   #page-1{
     flex-direction: column;
