@@ -6,35 +6,9 @@
     <title>CAg Industries</title>
   </head>
   <link rel="stylesheet" href="./style/style.css" />
-  <link rel="stylesheet" href="./style/header.css" />
   <link rel="stylesheet" href="./style/footer.css" />
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
   <body>
-    <header class="header">
-      <div id="logo">
-        <img src="../resources/logo.png" alt="" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html" class="nav active">Home</a></li>
-          <li><a href="#page-4" class="nav">Products</a></li>
-
-          <li><a href="./pages/about.html" class="nav">About</a></li>
-          <li>
-            <a href="./pages/contact/index.html" class="nav">Contact</a>
-          </li>
-        </ul>
-        <div id="srch">
-          <input type="text" placeholder="Search..." />
-          <div class="s-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-      </nav>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header>
     <div id="main">
       <div class="menu">
         <nav class="m-nav">
@@ -48,6 +22,38 @@
       </div>
 
       <div id="page-1">
+        <header class="header">
+          <div id="logo">
+            <img src="../resources/logo.png" alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html" class="nav active">Home</a></li>
+              <li><a href="#page-4" class="nav">Products</a></li>
+
+              <li><a href="#page-6" class="nav">About</a></li>
+              <li>
+                <a href="./pages/contact/index.html" class="nav">Contact</a>
+              </li>
+            </ul>
+            <div id="srch">
+              <input type="text" placeholder="Search..." />
+              <div class="s-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+
+              <!-- <div class="result">
+                <ul>
+                  <li>SIG</li>
+                  <li>SIG</li>
+                </ul>
+              </div> -->
+            </div>
+          </nav>
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
         <div id="slider">
           <img src="./resources/p1.webp" alt="" />
           <img src="./resources/p4.webp" alt="" />
@@ -180,7 +186,9 @@
         <div class="p-boxs">
           <a href="./pages/product1.html">
             <div class="p-boxL">
-              <img src="./resources/pro1_1.png" alt="" />
+              <div class="img">
+                <img src="./resources/pro1_1.png" alt="" />
+              </div>
               <span
                 >Silver Impregnated <br />
                 Graphite Contacts</span
@@ -189,7 +197,9 @@
           </a>
           <a href="./pages/product2.html">
             <div class="p-boxR">
-              <img src="./resources/pro2_1.png" alt="" />
+              <div class="img">
+                <img src="./resources/pro2_1.png" alt="" />
+              </div>
               <span
                 >Silver Impregnated Graphite <br />
                 Heavy Duty Contacts
@@ -286,9 +296,10 @@
               customers who rely on CAg Industries' products for critical
               contact applications.
             </p>
-            <a href="./pages/about.html">
+            <a  href="./pages/about.html">
               <button>Read More</button>
             </a>
+           
           </div>
         </section>
         <div id="app-page" style="margin-top: 5vmax">
@@ -343,6 +354,7 @@
             <i class="fa-solid fa-envelope"></i> info@cagindustries.in</span
           >
           <span> <i class="fa-solid fa-phone"></i> +91 8037404327</span>
+          <span> <i class="fa-solid fa-phone"></i> +91 9830951383</span>
           <div class="icons">
             <a href="https://g.co/kgs/E7WXVkK" target="_blank">
               <i class="fa-brands fa-google"></i>

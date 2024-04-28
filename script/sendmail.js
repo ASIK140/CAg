@@ -18,18 +18,23 @@ comment:${commet.value}`;
     From: "asiksk137@gmail.com",
     Subject: "This is the subject",
     Body: body,
-  }).then((message) => alert(message));
+  }).then((message) =>
+    swal("Thank You", "Your submission has been sent.", "success")
+  );
 }
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   sendMail();
+  setTimeout(() => {
+    form.reset();
+  }, 1000);
 });
 
-let menu_icon = document.querySelector(".menu-icon")
-let menu=document.querySelector(".menu")
+let menu_icon = document.querySelector(".menu-icon");
+let menu = document.querySelector(".menu");
 
-menu_icon.addEventListener("click",()=>{
-    console.log("work");
-  menu.classList.toggle("act")
-})
+menu_icon.addEventListener("click", () => {
+  console.log("work");
+  menu.classList.toggle("act");
+});
