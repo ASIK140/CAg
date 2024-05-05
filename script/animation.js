@@ -10,6 +10,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       end: "50% center",
     },
   });
+  gsap.from("#cer-ani", {
+    opacity: 0,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#cer-page",
+      scrub: true,
+      start: "top center",
+      end: "bottom center",
+    },
+  });
   gsap.from("#p8-ani", {
     opacity: 0,
     x: 200,

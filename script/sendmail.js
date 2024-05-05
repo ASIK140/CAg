@@ -61,7 +61,7 @@ input_box.onkeyup = () => {
 
 function display(result) {
   const content = result.map((list,index) => {
-    return `<a href="./pages/product${index+1}.html"><li>` + list + "</li></a>";
+    return `<a href="../product${index+1}.html"><li>` + list + "</li></a>";
   });
 
   result_box.innerHTML = "<ul>" + content.join(" ") + "</ul>";

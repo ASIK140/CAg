@@ -304,11 +304,8 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(https://images.unsplash.com/photo-1501523460185-2aa5d2a0f981?q=80&w=1531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #FFFBDA;
+
 }
 #page-2 section {
   width: 100%;
@@ -321,7 +318,7 @@ html {
   font-size: 5vmax;
   font-weight: 500;
   line-height: 1;
-  color: #ffff;
+  color: black;
 }
 .boxs {
   display: flex;
@@ -366,6 +363,53 @@ html {
   line-height: 1.3vmax;
   text-align: center;
 }
+#cer-page{
+  height: 100vh;
+  width: 100%;
+  background-color: #FFFBDA;
+
+}
+#cer-page span{
+  font-size: 2vmax;
+  font-weight: 500;
+  padding: 0.5vmax 0;
+  text-align: center;
+}
+#cer-page section{
+padding: 5vmax 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2vmax;
+}
+#cer-page  h1{
+  font-size: 5vmax;
+  font-weight: 500;
+  line-height: 1;
+  color: black;
+  text-align: center;
+
+}
+.crts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 10vmax ;
+  width: 80vmax;
+}
+.crts img{
+  height: 25vmax;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.crts img:hover{
+  transform: translateY(-15px);
+}
+#cer-page button:hover{
+transform: translateY(-10px);
+}
 #page-3 {
   height: 100vh;
   width: 100%;
@@ -376,7 +420,7 @@ html {
   flex-direction: column;
 
   color: #fff;
-  background: url(https://images.unsplash.com/photo-1474674556023-efef886fa147?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background: url(../resources/p3.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,7 +439,7 @@ html {
 #page-3 span {
   font-size: 2vmax;
 }
-#page-3 button {
+#page-3 button,#cer-page button {
   height: 3.3vmax;
   width: 12vmax;
   background: hsla(33, 100%, 53%, 1);
@@ -623,7 +667,7 @@ html {
 }
 #page-8 p {
   width: 70%;
-  font-size: 1.3vmax;
+  font-size: 1.5vmax;
   text-align: center;
 }
 
@@ -688,5 +732,9 @@ html {
   }
   .act {
     display: flex;
+  }
+  .crts{
+    flex-direction: column;
+    gap: 5vmax;
   }
 }
