@@ -7,12 +7,18 @@
 let s_imgs=document.querySelector(".s-imgs")
 let chld=s_imgs.children
 let b_img=document.getElementById("img")
-
+let s_imgs2=document.querySelector(".s-imgs2")
+let chld2=s_imgs2.children
+let b_img2=document.getElementById("img2")
 for (let index = 0; index < chld.length; index++) {
     chld[index].addEventListener("click",()=>{
         b_img.src=chld[index].src        
-    })
-    
+    })    
+}
+for (let index = 0; index < chld.length; index++) {
+  chld2[index].addEventListener("click",()=>{
+      b_img2.src=chld2[index].src        
+  })    
 }
 
 let menu_icon = document.querySelector(".menu-icon")
@@ -45,7 +51,7 @@ input_box.onkeyup = () => {
 
 function display(result) {
   const content = result.map((list,index) => {
-    return `<a href="./product${index+1}.html"><li>` + list + "</li></a>";
+    return `<a href="./product1.html"><li>` + list + "</li></a>";
   });
 
   result_box.innerHTML = "<ul>" + content.join(" ") + "</ul>";

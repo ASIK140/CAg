@@ -16,12 +16,12 @@ html {
 #page-1{
   display: flex;
   gap: 2vmax;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   height: 110vh;
-  padding: 0 5vmax;
+  padding: 2vmax 5vmax;
 }
-.s-imgs img{
+.s-imgs img,.s-imgs2 img{
   height: 7vmax;
   width: 7vmax;
   object-fit: cover;
@@ -31,7 +31,10 @@ html {
 .s-imgs img:hover{
   transform: scale(0.91);
 }
-.b-imgs img{
+.s-imgs2 img:hover{
+  transform: scale(0.91);
+}
+.b-imgs img,.b-imgs2 img{
   height: 29vmax;
   width: 29vmax;
   object-fit: cover;
@@ -40,13 +43,14 @@ html {
  display: flex; 
  flex-direction: column;
  gap: 1vmax;
+  width: 70%;
+
 }
 .dtls h1{
   font-size: 3vmax;
   line-height: 1;
 }
 .dtls p{
-  width: 80%;
   text-align: justify;
   font-size: 1.2vmax;
 }
@@ -112,6 +116,8 @@ html {
   #page-1{
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    padding: 2vmax;
   }
   .dtls{
     align-items: center;
