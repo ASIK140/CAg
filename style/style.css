@@ -393,8 +393,9 @@ gap: 2vmax;
 }
 .crts{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  gap: 5vmax;
   padding:0 10vmax ;
   width: 80vmax;
 }
